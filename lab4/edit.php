@@ -42,7 +42,7 @@ require 'connectdb.php';
                      <label for="gender">Gender</label><br>
                      <input type="radio" name="gender" <?php if ($user['Gender']=="M") echo " checked"; ?> value="M"/> Male<br>
                      <input type="radio" name="gender" <?php if ($user['Gender']=="F") echo " checked"; ?> value="F"/> Female<br><br>
-                     <input type = "checkbox" id="agree" name = "agree" <?php if ($user['Mail_Status']) echo " checked"; ?>/> Receive email from us <br><br>
+                     <input type = "checkbox" id="agree" name = "agree" <?php if ($user['Mail_Status']=="yes") echo " checked"; ?>/> Receive email from us <br><br>
                      <input type ="submit" name="save" class="btn btn-primary" style="border-raduis:10px; font-size:30px " value="Save"/>   
                  </form>
                 

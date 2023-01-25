@@ -14,7 +14,7 @@ require 'connectdb.php';
         }
     </style>
   </head>
-  <body >
+  <body style="background-color: #DBEEF2;">
     <div class="container mt-5">
         <div class="row">
             <div class="col-sm-12">
