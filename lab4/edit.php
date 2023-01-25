@@ -40,8 +40,8 @@ require 'connectdb.php';
                      <label for="email">Email</label><br>
                      <input type="email" class="form-control" id="email" name="email" value="<?=$user['Email'];?>" style="height:60px; font-size:30px"><br>
                      <label for="gender">Gender</label><br>
-                     <input type="radio" name="gender" <?php if ($user['Gender']) echo " checked"; ?> value="M"/> Male<br>
-                     <input type="radio" name="gender" <?php if ($user['Gender']) echo " checked"; ?> value="F"/> Female<br><br>
+                     <input type="radio" name="gender" <?php if ($user['Gender']=="M") echo " checked"; ?> value="M"/> Male<br>
+                     <input type="radio" name="gender" <?php if ($user['Gender']=="F") echo " checked"; ?> value="F"/> Female<br><br>
                      <input type = "checkbox" id="agree" name = "agree" <?php if ($user['Mail_Status']) echo " checked"; ?>/> Receive email from us <br><br>
                      <input type ="submit" name="save" class="btn btn-primary" style="border-raduis:10px; font-size:30px " value="Save"/>   
                  </form>
